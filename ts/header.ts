@@ -1,6 +1,10 @@
 const hbg:Object = document.querySelectorAll(".header-bg-img");
 const delay:number = 5000;
 
+hbg[1].classList.add('right')
+hbg[2].classList.add('right')
+hbg[3].classList.add('right')
+
 function callback():void {
     for(let i = 0; i < 4; i++ ) {
         setTimeout(()=>{

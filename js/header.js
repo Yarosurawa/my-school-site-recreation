@@ -1,5 +1,8 @@
 var hbg = document.querySelectorAll(".header-bg-img");
 var delay = 5000;
+hbg[1].classList.add('right');
+hbg[2].classList.add('right');
+hbg[3].classList.add('right');
 function callback() {
     var _loop_1 = function (i) {
         setTimeout(function () {
