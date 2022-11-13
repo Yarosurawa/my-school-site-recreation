@@ -3,8 +3,12 @@ var delay = 5000;
 function callback() {
     var _loop_1 = function (i) {
         setTimeout(function () {
-            hbg[i + 1].classList.remove('right');
-            hbg[i].classList.add('left');
+            try {
+                hbg[i + 1].classList.remove('right');
+            }
+            finally {
+                hbg[i].classList.add('left');
+            }
         }, 5000 * i + delay);
         setTimeout(function () {
             hbg[i].style.zIndex = -11;

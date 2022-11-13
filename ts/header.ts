@@ -4,8 +4,8 @@ const delay:number = 5000;
 function callback():void {
     for(let i = 0; i < 4; i++ ) {
         setTimeout(()=>{
-            hbg[i + 1].classList.remove('right')
-            hbg[i].classList.add('left')
+            try{hbg[i + 1].classList.remove('right')}
+            finally{hbg[i].classList.add('left')}
         }, 5000*i+delay)
         setTimeout(()=>{
             hbg[i].style.zIndex = -11;
