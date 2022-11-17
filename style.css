@@ -124,6 +124,7 @@ main{
 }
 
 .nav-link {
+    z-index: 10;
     background: var(--background-op);
     display: flex;
     justify-content: center;
